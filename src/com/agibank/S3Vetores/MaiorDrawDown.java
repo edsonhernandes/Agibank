@@ -3,8 +3,8 @@ package com.agibank.S3Vetores;
         /*
         10. Cálculo do Maior Drawdown
         O drawdown representa a maior queda percentual de um ativo em relação ao seu pico anterior.
-        Crie um programa que receba um vetor com os preços de fechamento de uma ação durante 10 dias e calcule o maior drawdown
-        ocorrido nesse período.
+        Crie um programa que receba um vetor com os preços de fechamento de uma ação durante 10 dias e calcule
+        o maior drawdown ocorrido nesse período.
         A fórmula para calcular o drawdown diário é:
         Drawdown = ((Preç o Atual − Pico Máximo Anterior) / Pico Máximo Anterior)  × 100
         O maior drawdown é o menor valor encontrado ao longo do período.
@@ -41,7 +41,8 @@ public class MaiorDrawDown {
             }
         }
 
-        // Exibir o maior drawdown encontrado com duas casas decimais
+        // Exibir o maior drawdown encontrado com duas casas decimais e o pico máximo
         System.out.printf("Maior Drawdown: %.2f%%\n", maiorDrawdown);
+        System.out.println("O pico máximo encontrado foi:" + picoMaximo);
     }
 }
